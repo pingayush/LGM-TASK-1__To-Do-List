@@ -82,7 +82,7 @@ function setTaskAlarm(taskTiming, taskText) {
 }
 
 function playSound() {
-  var audio = new Audio('to-do-alarm.wav'); // Replace with the local file path to your sound file
+  var audio = new Audio('to-do.mp3'); // Replace with the local file path to your sound file
   audio.play();
 }
 
