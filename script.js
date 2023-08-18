@@ -73,8 +73,10 @@ function setTaskAlarm(taskTiming, taskText) {
   var currentTime = new Date().getTime();
   var timeDifference = alarmTime - currentTime;
 
+  playSound();
+
   if (timeDifference > 0) {
-    playSound(); // Play the sound
+     // Play the sound
     setTimeout(function() {
       alert('Task: ' + taskText + '\nTime: ' + taskTiming);
     }, timeDifference);
