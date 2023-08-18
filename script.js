@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 function playSound() {
-  var audio = new Audio('file:///C:/Users/pinga/Desktop/LGM-TASK/TASK1/to-do-alarm.wav'); // Replace with the local file path to your sound file
+  var audio = new Audio('to-do-alarm.wav'); // Replace with the local file path to your sound file
   audio.play();
 }
 
