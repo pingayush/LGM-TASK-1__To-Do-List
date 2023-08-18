@@ -1,0 +1,84 @@
+body {
+  background-image: url('file:///C:/Users/pinga/Desktop/LGM-TASK/TASK1/to-do.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  color: #000000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#task-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+#task-input {
+  flex: 1;
+  padding: 5px;
+}
+
+#add-task-btn {
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #c4cef9;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.task-item:hover {
+  background-color: #f9d3f7;
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+  background-color: #12d76f;
+  opacity: 0.5;
+}
+
+.task-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.delete-btn {
+  padding: 5px 10px;
+  background-color: #c7bafb;
+  color: black;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #f09a12;
+}
+
+.low-priority {
+  color: brown;
+}
+
+.medium-priority {
+  color: blue;
+}
+
+.high-priority {
+  color: red;
+}
