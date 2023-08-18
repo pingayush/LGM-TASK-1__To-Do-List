@@ -75,8 +75,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   if (timeDifference > 0) {
     setTimeout(function() {
+      playSound();
       alert('Task: ' + taskText + '\nTime: ' + taskTiming);
-      playSound(); // Play the sound
+       // Play the sound
     }, timeDifference);
   }
 }
