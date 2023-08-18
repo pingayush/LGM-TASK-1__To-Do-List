@@ -68,16 +68,15 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Timing: ' + taskTiming);
   }
 
- function setTaskAlarm(taskTiming, taskText) {
+function setTaskAlarm(taskTiming, taskText) {
   var alarmTime = new Date(taskTiming).getTime();
   var currentTime = new Date().getTime();
   var timeDifference = alarmTime - currentTime;
 
   if (timeDifference > 0) {
+    playSound(); // Play the sound
     setTimeout(function() {
-      playSound();
       alert('Task: ' + taskText + '\nTime: ' + taskTiming);
-       // Play the sound
     }, timeDifference);
   }
 }
